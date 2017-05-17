@@ -19,11 +19,17 @@ public class Case {
     List<Integer> problem; //partie problem
     List<Itineraire> solution; //partie solution
     
+    //L'ensemble des cas de substitution
+    List<Integer> casSubstitutions = new ArrayList<>();
+    
+    //L'ensemble des substituts
+    List<Integer> substitus = new ArrayList<>();
+    
     public static int identifierCmp = 0;
 
     public Case() {
         this.problem = new ArrayList<>();
-        this.solution = new ArrayList<>();  
+        this.solution = new ArrayList<>();
     }
     
     /**

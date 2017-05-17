@@ -19,12 +19,13 @@ import java.util.Map;
 public class KnowledgeGeneration {
     
     public static Deque<Case> fifo = new ArrayDeque<>();
-    
     public static Map<Integer,Case> knowledgeBase = new HashMap<>();
+    public static 
 
+    //Chercher tous les cas de substitution de c
     private void chercherCasSubstitution(Case c) {
         for (Map.Entry pair : knowledgeBase.entrySet()) {
-            
+            System.out.println(pair.getKey() + " = " + pair.getValue());
         }
     }
 
@@ -43,7 +44,8 @@ public class KnowledgeGeneration {
         while (!fifo.isEmpty())
         {
             Case c = (Case)fifo.removeFirst();
-        
+            System.out.println("Cas à traiter: "+c.toString());
+            
             //Chercher tous les cas de substitution de c
             chercherCasSubstitution(c);
             
