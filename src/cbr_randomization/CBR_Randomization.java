@@ -5,17 +5,29 @@
  */
 package cbr_randomization;
 
+import cbr_randomization.entités.Case;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author miled
  */
 public class CBR_Randomization {
-
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        KnowledgeGeneration generationProcess = new KnowledgeGeneration();
+        
+        List<Integer> problem = new ArrayList<>();
+        
+        Case c = new Case();
+        
+       
+        
     }
     
 }
